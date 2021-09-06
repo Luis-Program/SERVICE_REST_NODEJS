@@ -17,10 +17,10 @@ app.use(bodyparser.json());
 
 
 //routes
-app.use('/Get',getsRoutes);
-app.use('/Create', postsRoutes);
-app.use('/Update', putsRoutes);
-app.use('/Delete', deletesRoutes);
+app.use('/product/Get',getsRoutes);
+app.use('/product/Create', postsRoutes);
+app.use('/product/Update', putsRoutes);
+app.use('/product/Delete', deletesRoutes);
 
 
 //DbConnection
