@@ -8,9 +8,9 @@ router.put('/:productId', async (req,res) => {
     try{
     const products = await Products.updateOne({_id: req.params.productId}
     ,{ $set: {
-        Name : req.body.Name,
-        Cost : req.body.Cost,
-        Amount : req.body.Amount
+        name : req.body.name,
+        cost : req.body.cost,
+        amount : req.body.amount
     } })
     res.json(products);
     }catch(err){

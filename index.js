@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 const app = express();
 const cors = require('cors');
-require('dotenv/config')
+require('dotenv/config');
 
 //import routes
 const getsRoutes = require('./Routes/Get');
@@ -28,4 +28,6 @@ mongoose.connect(process.env.DB_connection, { useNewUrlParser: true, useUnifiedT
 
 
 //Running port
-app.listen(3000);
+
+app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'));

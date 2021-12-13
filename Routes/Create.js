@@ -7,9 +7,9 @@ const Products = require('../Models/Products');
 router.post('/', async (req,res) => {
 
     const product = new Products({
-        Name : req.body.Name,
-        Cost : req.body.Cost,
-        Amount : req.body.Amount
+        name : req.body.name,
+        cost : req.body.cost,
+        amount : req.body.amount
     });
 
     try{
