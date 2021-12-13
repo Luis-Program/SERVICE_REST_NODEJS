@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/51853c09-5346-44f4-8952-b76d072401a3/resourceGroups/DesarrolloWeb/providers/Microsoft.Web/sites/microservicenode",
+    "appService.deploySubpath": "."
+}
